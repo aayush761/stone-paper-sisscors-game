@@ -1,0 +1,141 @@
+/* Base styles (for larger screens) */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(231, 169, 231);
+}
+
+#heading {
+    background-color: rgb(216, 108, 216);
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    color: white;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(138, 4, 138);
+}
+
+.score-board {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 10px;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.mes-container {
+    margin-top: 20px;
+}
+
+#mes {
+    font-size: 3rem;
+    padding: 5px;
+    background-color: rgb(138, 4, 138);
+    display: inline;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Media Queries */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    #heading {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+
+    #mes {
+        font-size: 2rem;
+        padding: 3px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    #heading {
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2rem;
+    }
+
+    #mes {
+        font-size: 1.5rem;
+        padding: 2px;
+    }
+}
